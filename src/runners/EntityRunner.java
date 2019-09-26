@@ -3,6 +3,8 @@ package runners;
 import Entity.Driver;
 import Entity.Human;
 import Entity.Programmer.CppProgrammer;
+import interfaces.Rectangle;
+import interfaces.Square;
 
 import java.util.Arrays;
 import java.util.Date;
@@ -94,5 +96,20 @@ public class EntityRunner {
         CppProgrammer cppProgrammer1 = new CppProgrammer("Vanya","Zalupkin", true);
         System.out.println(cppProgrammer1);
 
+        System.out.println("/////////////////////");
+
+        Rectangle rectangle = new Rectangle();
+        System.out.println(rectangle);
+
+        Rectangle rectangle1 = new Rectangle(1,2);
+        System.out.println(rectangle1);
+
+        Square square = new Square();
+        System.out.println(square);
+
+        Square square1 = new Square(3);
+        System.out.println(square1);
+
+        System.out.println("/////////////////////");
     }
 }
