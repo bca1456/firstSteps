@@ -1,5 +1,6 @@
 import Entity.Driver;
 import Entity.Human;
+import runners.CollectionsRunner;
 import runners.EntityRunner;
 
 import java.util.Arrays;
@@ -13,5 +14,8 @@ public class eshkere {
     public static void main(String[] args){
         EntityRunner entityRunner = new EntityRunner();
         entityRunner.run();
+
+        CollectionsRunner collectionsRunner = new CollectionsRunner();
+        collectionsRunner.run();
     }
 }

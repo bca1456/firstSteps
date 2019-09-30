@@ -8,7 +8,7 @@ public class ExpCollections {
 
     }
 
-    public void try(){
-        Collection<Integer> collection = new Collection<Integer>();
-    }
+//    public void try(){
+//        Collection<Integer> collection = new Collection<Integer>();
+//    }
 }

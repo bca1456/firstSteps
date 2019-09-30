@@ -15,7 +15,9 @@ public class EntityRunner {
     }
 
     public void run(){
-        System.out.println("цуйцу");
+        System.out.println("////////////////////");
+        System.out.println("////EntityRunner////");
+        System.out.println("////////////////////");
         Human human1 = new Human();
         //System.out.println(human1);
 
