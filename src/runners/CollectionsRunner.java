@@ -1,6 +1,7 @@
 package runners;
 
 import collections.ExpIterator;
+import collections.ExpIterator2;
 
 public class CollectionsRunner {
 
@@ -17,5 +18,8 @@ public class CollectionsRunner {
         expIterator.run();
 
         System.out.println("/////////////////////////");
+
+        ExpIterator2 expIterator2 = new ExpIterator2();
+        expIterator2.run();
     }
 }
