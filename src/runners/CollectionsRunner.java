@@ -1,5 +1,6 @@
 package runners;
 
+import collections.ExpCollections;
 import collections.ExpIterator;
 import collections.ExpIterator2;
 
@@ -21,5 +22,9 @@ public class CollectionsRunner {
 
         ExpIterator2 expIterator2 = new ExpIterator2();
         expIterator2.run();
+
+        System.out.println("/////////////////////////");
+        ExpCollections expCollections = new ExpCollections();
+        expCollections.run();
     }
 }
