@@ -1,8 +1,6 @@
 package runners;
 
-import collections.ExpCollections;
-import collections.ExpIterator;
-import collections.ExpIterator2;
+import collections.*;
 
 public class CollectionsRunner {
 
@@ -26,5 +24,13 @@ public class CollectionsRunner {
         System.out.println("/////////////////////////");
         ExpCollections expCollections = new ExpCollections();
         expCollections.run();
+
+        System.out.println("/////////////////////////");
+        ExpDeqQueue expDeqQueue = new ExpDeqQueue();
+        expDeqQueue.run();
+
+        System.out.println("/////////////////////////");
+        ExpHashSet expHashSet = new ExpHashSet();
+        expHashSet.run();
     }
 }
