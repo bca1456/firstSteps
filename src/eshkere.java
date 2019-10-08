@@ -2,6 +2,7 @@ import Entity.Driver;
 import Entity.Human;
 import runners.CollectionsRunner;
 import runners.EntityRunner;
+import runners.StreamRunner;
 
 import java.util.Arrays;
 import java.util.Date;
@@ -17,5 +18,8 @@ public class eshkere {
 
         CollectionsRunner collectionsRunner = new CollectionsRunner();
         collectionsRunner.run();
+
+        StreamRunner streamRunner = new StreamRunner();
+        streamRunner.run();
     }
 }
