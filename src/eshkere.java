@@ -3,6 +3,7 @@ import Entity.Human;
 import runners.CollectionsRunner;
 import runners.EntityRunner;
 import runners.StreamRunner;
+import runners.StringRunner;
 
 import java.util.Arrays;
 import java.util.Date;
@@ -21,5 +22,8 @@ public class eshkere {
 
         StreamRunner streamRunner = new StreamRunner();
         streamRunner.run();
+
+        StringRunner stringRunner = new StringRunner();
+        stringRunner.run();
     }
 }
