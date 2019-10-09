@@ -3,6 +3,7 @@ package runners;
 import streams.ExpFileStream;
 import streams.ExpFileStream2;
 import streams.ExpFileStream3;
+import streams.ExpFileStream4;
 
 public class StreamRunner {
     public void run() {
@@ -20,5 +21,9 @@ public class StreamRunner {
         System.out.println("////////////////////");
         ExpFileStream3 expFileStream3 = new ExpFileStream3();
         expFileStream3.run();
+
+        System.out.println("////////////////////");
+        ExpFileStream4 expFileStream4 = new ExpFileStream4();
+        expFileStream4.run();
     }
 }

@@ -1,6 +1,8 @@
 package Entity;
 
-public class Driver extends Human {
+import java.io.Serializable;
+
+public class Driver extends Human implements Serializable {
     private String driverLicense;
 
     public Driver(){
@@ -28,6 +30,6 @@ public class Driver extends Human {
 
     @Override
     public String toString() {
-        return super.toString() + " Humans driverLicense:" + this.driverLicense ; //+ System.getProperty("line.separator")
+        return "Drivers name: " + this.getName() + "  Drivers secondName: " + this.getSecondName() + " Drivers driverLicense:" + this.driverLicense ; //+ System.getProperty("line.separator")
     }
 }
