@@ -1,9 +1,6 @@
 import Entity.Driver;
 import Entity.Human;
-import runners.CollectionsRunner;
-import runners.EntityRunner;
-import runners.StreamRunner;
-import runners.StringRunner;
+import runners.*;
 
 import java.util.Arrays;
 import java.util.Date;
@@ -25,5 +22,8 @@ public class eshkere {
 
         StringRunner stringRunner = new StringRunner();
         stringRunner.run();
+
+        LambdaRunner lambdaRunner = new LambdaRunner();
+        lambdaRunner.run();
     }
 }

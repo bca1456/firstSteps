@@ -16,5 +16,13 @@ public class StringRunner {
         stringBuilder.deleteCharAt(stringBuilder.length() - 1);
         System.out.printf("\n%s", stringBuilder);
         System.out.printf("\nReverse: %s", stringBuilder.reverse());
+
+        System.out.println("////////////////////");
+
+        String text = "FIFA will never regret it";
+        String[] words = text.split("\\s*(\\s|,|!|\\.)\\s*");
+        for(String word : words){
+            System.out.println(word);
+        }
     }
 }
