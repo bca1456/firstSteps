@@ -1,6 +1,7 @@
 package runners;
 
 import lambdas.ExpLambda;
+import lambdas.ExpLambda2;
 
 public class LambdaRunner {
     public void run(){
@@ -10,5 +11,8 @@ public class LambdaRunner {
 
         ExpLambda expLambda = new ExpLambda();
         expLambda.run();
+
+        ExpLambda2 expLambda2 = new ExpLambda2();
+        expLambda2.run();
     }
 }

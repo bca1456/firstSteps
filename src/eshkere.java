@@ -25,5 +25,8 @@ public class eshkere {
 
         LambdaRunner lambdaRunner = new LambdaRunner();
         lambdaRunner.run();
+
+        ThreadRunner threadRunner = new ThreadRunner();
+        threadRunner.run();
     }
 }
