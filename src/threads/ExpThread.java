@@ -1,18 +1,29 @@
 package threads;
 
 public class ExpThread {
-    public void run(){
+    public void run() {
         System.out.println("Main thread started...");
-        new qThread("JThread").start();
+
+            for (int i = 0; i < 5; i++) {
+                QThread qThread = new QThread("qThread " + i);
+                qThread.start();
+                try {
+                    qThread.join();
+                } catch (InterruptedException exc) {
+                    System.out.printf("%s throw was interrupted", qThread.getName());
+                }
+            }
+
         System.out.println("Main thread finished...");
     }
 }
 
-class qThread extends Thread {
-    qThread(String name){
+class QThread extends Thread {
+    QThread(String name){
         super(name);
     }
 
+    @Override
     public void run(){
 
         System.out.printf("%s started... \n", Thread.currentThread().getName());
@@ -22,6 +33,6 @@ class qThread extends Thread {
         catch(InterruptedException e){
             System.out.println("Thread has been interrupted");
         }
-        System.out.printf("%s fiished... \n", Thread.currentThread().getName());
+        System.out.printf("%s finished... \n", Thread.currentThread().getName());
     }
 }
