@@ -1,6 +1,7 @@
 package Entity;
 
 import java.io.Serializable;
+import java.util.Comparator;
 
 public class Driver extends Human implements Serializable {
     private String driverLicense;
@@ -33,3 +34,5 @@ public class Driver extends Human implements Serializable {
         return "Drivers name: " + this.getName() + "  Drivers secondName: " + this.getSecondName() + " Drivers driverLicense:" + this.driverLicense ; //+ System.getProperty("line.separator")
     }
 }
+
+
